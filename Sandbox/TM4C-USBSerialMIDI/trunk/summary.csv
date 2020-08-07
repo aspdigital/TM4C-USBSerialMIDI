@@ -1,0 +1,26 @@
+Pin#, PORT IO, Function, Directions
+42,PF0,EN0LED0, , ,
+46,PF4,EN0LED1, , ,
+49,PG0,EN0PPS, , ,
+43,PF1,EN0LED2, , ,
+116,PJ0,GPIO_PJ0, false, true,Input
+117,PJ1,GPIO_PJ1, false, true,Input
+108,PN1,GPIO_PN1, false, false,Output
+107,PN0,GPIO_PN0, false, false,Output
+78,PM0,GPIO_PM0, false, false,Output
+77,PM1,GPIO_PM1, false, false,Output
+76,PM2,GPIO_PM2, false, false,Output
+75,PM3,GPIO_PM3, false, false,Output
+74,PM4,GPIO_PM4, false, false,Output
+73,PM5,GPIO_PM5, false, false,Output
+72,PM6,GPIO_PM6, false, false,Output
+83,PL2,PHB0, , ,
+84,PL3,IDX0, , ,
+82,PL1,PHA0, , ,
+33,PA0,U0RX, , ,
+34,PA1,U0TX, , ,
+25,PC4,U7RX, , ,
+24,PC5,U7TX, , ,
+94,PL6,USB0DP, , ,
+93,PL7,USB0DM, , ,
+96,PB1,USB0VBUS, , ,

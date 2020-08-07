@@ -1,0 +1,115 @@
+/**
+ * These arguments were used when this file was generated. They will be automatically applied on subsequent loads
+ * via the GUI or CLI. Run CLI with '--help' for additional information on how to override these arguments.
+ * @cliArgs --device "TM4C129x" --package "128 Pin QFP|32x32" --part "TM4C1294NCPDT"
+ * @versions {"data":"2020052512","timestamp":"2020052512","tool":"1.5.0+1397","templates":"2020052512"}
+ */
+
+/**
+ * These are the peripherals and settings in this configuration
+ */
+const iETHERNET1           = scripting.addPeripheral("ETHERNET");
+iETHERNET1.$name           = "MyETHERNET1";
+iETHERNET1.EN0LED0.$assign = "PF0";
+iETHERNET1.EN0LED1.$assign = "PF4";
+const iGPIO1               = scripting.addPeripheral("GPIO");
+iGPIO1.$numPins            = 2;
+iGPIO1["0"].pu_pd          = "pu";
+iGPIO1["0"].$assign        = "PJ0";
+iGPIO1["1"].pu_pd          = "pu";
+iGPIO1["1"].$assign        = "PJ1";
+iGPIO1.$name               = "Switches";
+const iGPIO2               = scripting.addPeripheral("GPIO");
+iGPIO2.$numPins            = 2;
+iGPIO2["0"].io             = "output";
+iGPIO2["0"].$assign        = "PN1";
+iGPIO2["1"].io             = "output";
+iGPIO2["1"].$assign        = "PN0";
+iGPIO2.$name               = "LEDs";
+const iGPIO3               = scripting.addPeripheral("GPIO");
+iGPIO3.$numPins            = 8;
+iGPIO3["0"].io             = "output";
+iGPIO3["0"].$assign        = "PM0";
+iGPIO3["1"].io             = "output";
+iGPIO3["1"].$assign        = "PM1";
+iGPIO3["2"].io             = "output";
+iGPIO3["2"].$assign        = "PM2";
+iGPIO3["3"].io             = "output";
+iGPIO3["3"].$assign        = "PM3";
+iGPIO3["4"].io             = "output";
+iGPIO3["4"].$assign        = "PM4";
+iGPIO3["5"].io             = "output";
+iGPIO3["5"].$assign        = "PM5";
+iGPIO3["6"].io             = "output";
+iGPIO3["6"].$assign        = "PM6";
+iGPIO3["7"].io             = "output";
+iGPIO3["7"].$assign        = "PM7";
+iGPIO3.$name               = "LCD_IF";
+const iGPIO4               = scripting.addPeripheral("GPIO");
+iGPIO4["0"].io             = "output";
+iGPIO4["0"].$assign        = "PL3";
+iGPIO4.$name               = "QETimerExpired";
+const iQEI1                = scripting.addPeripheral("QEI");
+iQEI1.$name                = "MyQEI";
+iQEI1.$assign              = "QEI0";
+iQEI1.PHB.$assign          = "PL2";
+iQEI1.IDX.$assign          = "PL3";
+iQEI1.IDX.$used            = false;
+iQEI1.PHA.$assign          = "PL1";
+const iTimer1              = scripting.addPeripheral("Timer");
+iTimer1.$name              = "TestTimer";
+iTimer1.$assign            = "Timer1";
+iTimer1.CCP0.$assign       = "PD2";
+iTimer1.CCP1.$used         = false;
+const iUART1               = scripting.addPeripheral("UART");
+iUART1.$name               = "VCom";
+iUART1.RX.$assign          = "PA0";
+iUART1.TX.$assign          = "PA1";
+iUART1.DCD.$used           = false;
+iUART1.DTR.$used           = false;
+iUART1.CTS.$used           = false;
+iUART1.DSR.$used           = false;
+iUART1.RTS.$used           = false;
+iUART1.RI.$used            = false;
+const iUART2               = scripting.addPeripheral("UART");
+iUART2.$name               = "MIDI";
+iUART2.$assign             = "UART7";
+iUART2.RX.$assign          = "PC4";
+iUART2.TX.$assign          = "PC5";
+iUART2.DCD.$used           = false;
+iUART2.DTR.$used           = false;
+iUART2.CTS.$used           = false;
+iUART2.DSR.$used           = false;
+iUART2.RTS.$used           = false;
+iUART2.RI.$used            = false;
+const iUSB1                = scripting.addPeripheral("USB");
+iUSB1.$name                = "MyUSB1";
+iUSB1.$assign              = "USB0";
+iUSB1.D4.$used             = false;
+iUSB1.D0.$used             = false;
+iUSB1.EPEN.$assign         = "PD6";
+iUSB1.DIR.$used            = false;
+iUSB1.STP.$used            = false;
+iUSB1.DP.$assign           = "PL6";
+iUSB1.PFLT.$used           = false;
+iUSB1.DM.$assign           = "PL7";
+iUSB1.D3.$used             = false;
+iUSB1.D7.$used             = false;
+iUSB1.CLK.$used            = false;
+iUSB1.ID.$assign           = "PB0";
+iUSB1.NXT.$used            = false;
+iUSB1.VBUS.$assign         = "PB1";
+iUSB1.D1.$used             = false;
+iUSB1.D6.$used             = false;
+iUSB1.D5.$used             = false;
+iUSB1.D2.$used             = false;
+
+/**
+ * Pinmux solution for unlocked pins/peripherals. This ensures that minor changes to the automatic solver in a future
+ * version of the tool will not impact the pinmux you originally saw.  These lines can be completely deleted in order to
+ * re-solve from scratch.
+ */
+iETHERNET1.$suggestSolution         = "ETHERNET0";
+iETHERNET1.EN0PPS.$suggestSolution  = "PG0";
+iETHERNET1.EN0LED2.$suggestSolution = "PF1";
+iUART1.$suggestSolution             = "UART0";
