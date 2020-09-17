@@ -86,7 +86,7 @@ const uint8_t g_pui8AudioMIDIDeviceDescriptor[] =
 {
     18,                   // bLength
     USB_DTYPE_DEVICE,     // bDescriptorType
-    USBShort(0x0200),     // bcdUSB
+    USBShort(0x0110),     // bcdUSB
     0x00,               // bDeviceClass,  defined at interface level
 //	0xEF,				  // bDeviceClass: miscellaneous class device for IAD
     0x00,               // bDeviceSubClass, defined at interface level
