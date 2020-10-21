@@ -20,6 +20,8 @@
 #include "usb_midi.h"
 #include "midi_rx_task.h"
 
+#include "utils/uartstdio.h"
+
 /**
  * Check for incoming MIDI messages and parse them.
  *
@@ -58,6 +60,7 @@ void MIDI_Rx_Task(void)
                 break;
             }
         }
+        UARTprintf("%02x : %02x : %02x : %02x\n", msg.header, msg.byte1, msg.byte2, msg.byte3);
     }
 }
 

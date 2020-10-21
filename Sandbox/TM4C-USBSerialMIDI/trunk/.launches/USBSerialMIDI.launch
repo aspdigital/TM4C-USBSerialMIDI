@@ -23,7 +23,7 @@
 <stringAttribute key="com.ti.ccstudio.debug.debugModel.ATTR_PROGRAM.target_config.ccxml.Stellaris In-Circuit Debug Interface_0/CORTEX_M4_0" value="${workspace_loc:/USBSerialMIDI/Debug/USBSerialMIDI.out}"/>
 <stringAttribute key="com.ti.ccstudio.debug.debugModel.ATTR_TARGET_CONFIG" value="${workspace_loc:/USBSerialMIDI/target_config.ccxml}"/>
 <booleanAttribute key="com.ti.ccstudio.debug.debugModel.ATTR_USE_DEFAULT_TARGET_CONFIG" value="false"/>
-<stringAttribute key="com.ti.ccstudio.debug.debugModel.MRU_PROGRAM.target_config.ccxml.Stellaris In-Circuit Debug Interface_0/CORTEX_M4_0" value="/Users/andy/Library/Mobile Documents/com~apple~CloudDocs/ARM/workspace_ccs/USBSerialMIDI/Debug/USBSerialMIDI.out"/>
+<stringAttribute key="com.ti.ccstudio.debug.debugModel.MRU_PROGRAM.target_config.ccxml.Stellaris In-Circuit Debug Interface_0/CORTEX_M4_0" value="/Users/andy/Projects/USB-MIDI/TM4C-USBSerialMIDI/Debug/USBSerialMIDI.out"/>
 <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
 <listEntry value="/USBSerialMIDI"/>
 </listAttribute>
